@@ -1,19 +1,48 @@
-import logo from "./logo.svg";
+import Header from "./components/Header";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <div>Notifications 3 Mark all as read</div>
+    <div>
+      <Header />
       <div>
-        Mark Webber reacted to your recent post My first tournament today! 1m
-        ago Angela Gray followed you 5m ago Jacob Thompson has joined your group
-        Chess Club 1 day ago Rizky Hasanuddin sent you a private message 5 days
-        ago Hello, thanks for setting up the Chess Club. I've been a member for
-        a few weeks now and I'm already having lots of fun and improving my
-        game. Kimberly Smith commented on your picture 1 week ago Nathan
-        Peterson reacted to your recent post 5 end-game strategies to increase
-        your win rate 2 weeks ago Anna Kim left the group Chess Club 2 weeks ago
+        <div>
+          <span>Mark Webber</span> reacted to your recent post My first
+          tournament today!
+          <div>1m ago</div>
+        </div>
+        <div>
+          <span>Angela Gray </span>followed you
+          <span>5m ago</span>
+        </div>
+        <div>
+          <span>Jacob Thompson</span> has joined your group Chess Club 1 day ago
+        </div>
+        <div>
+          <span>Rizky Hasanuddin</span>
+          sent you a private message
+          <div>5 days ago</div>
+          <div>
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </div>
+        </div>
+        <div>
+          <span>Kimberly Smith</span> commented on your picture
+          <div>1 week ago</div>
+        </div>
+        <div>
+          <span>Nathan Peterson</span>
+          reacted to your recent post 5 end-game strategies to increase your win
+          rate
+          <div>2 weeks ago</div>
+        </div>
+        <div>
+          <span> Anna Kim</span>
+          left the group Chess Club
+          <div>2 weeks ago</div>
+        </div>
       </div>
     </div>
   );
