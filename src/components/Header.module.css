@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "PJ Sans";
+  src: url("https://fonts.google.com/specimen/Plus+Jakarta+Sans");
+}
+
+.header {
+  margin: 2%;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "PJ Sans", sans-serif;
+}
+
+.notifs {
+  color: hsl(224, 21%, 14%);
+  font-weight: 800;
+}
