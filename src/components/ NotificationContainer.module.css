@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("https://fonts.google.com/specimen/Plus+Jakarta+Sans");
+}
+
+.header {
+  margin: 2%;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.notifs {
+  color: hsl(224, 21%, 14%);
+  font-weight: 800;
+  white-space: nowrap;
+  font-size: 18px;
+  height: 16px;
+}
+
+.count {
+  background-color: hsl(219, 85%, 26%);
+  border-radius: 25%;
+  color: hsl(0, 0%, 100%);
+  padding: 0.5% 7%;
+  margin-left: 2%;
+}
+
+.btn {
+  font-size: 14.5px;
+  font-weight: 500;
+  color: hsl(219, 12%, 42%);
+  cursor: pointer;
+}
