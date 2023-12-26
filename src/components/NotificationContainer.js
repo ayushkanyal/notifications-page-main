@@ -1,6 +1,6 @@
-import style from "./Header.module.css";
+import style from "./NotificationContainer.module.css";
 
-function Header() {
+function NotificationContainer({children}) {
   return (
     <>
       <div className={style.header}>
@@ -9,8 +9,9 @@ function Header() {
         </div>
         <div className={style.btn}>Mark all as read</div>
       </div>
+      {children}
     </>
   );
 }
 
-export default Header;
+export default NotificationContainer;
