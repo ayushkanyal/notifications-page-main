@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 10px;
+}
+
+.left_header {
+    font-weight: 700;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+}
+
+.notifs_count {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(219, 85%, 26%);
+    padding: 1px 8px;
+    border-radius: 15%;
+    margin-left: 7.5px;
+    font-size: 14px;
+}
+
+.right_header {
+    font-size: 15px;
+    color: hsl(219, 12%, 42%);
+    font-weight: 600;
+}
+
+.right_header:hover {
+    color:  hsl(219, 85%, 26%);
+    cursor: pointer;
+}
