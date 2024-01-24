@@ -74,3 +74,18 @@
   background-color: hsl(205, 33%, 90%);
   cursor: pointer;
 }
+
+/* Mobile View */
+
+@media (max-width:600px) {
+
+  .displayPicture {
+    height: 45px;
+    width: 45px;
+    margin-top: 2.5px;
+  }
+
+  .tabContainer {
+    padding: 3%;
+  }
+}
