@@ -5,23 +5,38 @@ export default function NotificationTab({
   time,
   name,
   action,
-  group,
   unread,
-  message,
+  group,
   post,
-  picturePost
+  message,
+  picturePost,
 }) {
+
   return (
     <>
-      <div className={`${styles["tabContainer"]} ${unread ? styles["new"] : ""}`}>
-        <img className={styles['displayPicture']} src={displayPicture}></img>
-        <div>
-          <span className={styles["name"]}>{name}</span> {action} <span className={styles["group"]}>{group}</span> <span className={styles["post"]}>{post}</span>
-          {(unread) ? <span className={styles['dot']}></span> : ""}
+      <div
+        className={`${styles["tabContainer"]} ${unread ? styles["new"] : ""}`}
+      >
+        <img
+          className={styles["displayPicture"]}
+          src={displayPicture}
+          alt={name}
+        ></img>
+        <div className={styles["textContent"]}>
+          <span className={styles["name"]}>{name}</span> {action}
+          <span className={styles["group"]}>{group}</span>
+          <span className={styles["post"]}>{post}</span>
+          {unread ? <span className={styles["dot"]}></span> : null}
           <div className={styles["time"]}>{time}</div>
           {message ? <div className={styles["message"]}>{message}</div> : ""}
-          {picturePost ? <div className={styles["picturePost"]}>{picturePost}</div> : ""}
         </div>
+        {picturePost ? (
+          <img
+            className={styles["picturePost"]}
+            src={picturePost}
+            alt="User post"
+          ></img>
+        ) : null}
       </div>
     </>
   );
