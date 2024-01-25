@@ -9,12 +9,12 @@
 }
 
 .new {
-  background-color: hsl(211, 68%, 94%);
+  background-color: hsl(210, 60%, 98%);
 }
 
 .displayPicture {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
 }
 
 .name {
@@ -32,18 +32,29 @@
 .dot {
   display: inline-block;
   white-space: nowrap;
-  margin-left: 5px;
+  margin-top: -50px;
+  margin-left: 1.5px;
   height: 7.5px;
   width: 7.5px;
   border-radius: 50%;
   background-color: hsl(1, 90%, 64%);
 }
 
-/* Special compponents */
+/* Middle Notification component */
+
+.textContent {
+  flex-grow: 1;
+}
+
+/* Tail Notification components */
 
 .group {
   color: hsl(219, 85%, 26%);
   font-weight: 700;
+}
+
+.group::before {
+  content: " ";
 }
 
 .group:hover {
@@ -54,6 +65,14 @@
 .post {
   color: hsl(224, 21%, 14%);
   font-weight: 700;
+}
+
+.post::before {
+  content: " ";
+}
+
+.post::after {
+  content: " ";
 }
 
 .post:hover {
@@ -72,6 +91,16 @@
   border: none;
   padding: 2.65% 3.2%;
   background-color: hsl(205, 33%, 90%);
+  cursor: pointer;
+}
+
+.picturePost {
+  height: 45px;
+  width: 45px;
+  margin-bottom: -15px;
+}
+
+.picturePost:hover {
   cursor: pointer;
 }
 
